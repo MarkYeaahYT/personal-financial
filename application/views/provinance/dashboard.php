@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <?php $this->load->view('layout/head'); ?>
 
-<!-- ============================================================== -->
+    <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
     <!-- ============================================================== -->
     <div class="preloader">
@@ -335,6 +335,57 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!-- End Topbar header -->
         <!-- ============================================================== -->
         <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <!-- User Profile-->
+                        <li>
+                            <!-- User profile -->
+                            <div class="user-profile text-center position-relative pt-4 mt-1">
+                                <!-- User profile image -->
+                                <div class="profile-img m-auto"> <img src="../assets/images/users/1.jpg" alt="user" class="w-100 rounded-circle" /> </div>
+                                <!-- User profile text-->
+                                <div class="profile-text py-1"> <a href="#" class="dropdown-toggle link u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Markarn Doe <span class="caret"></span></a>
+                                    <div class="dropdown-menu animated flipInY">
+                                        <a href="#" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
+                                        <a href="#" class="dropdown-item"><i class="ti-wallet"></i> My Balance</a>
+                                        <a href="#" class="dropdown-item"><i class="ti-email"></i> Inbox</a>
+                                        <div class="dropdown-divider"></div> <a href="#" class="dropdown-item"><i class="ti-settings"></i> Account Setting</a>
+                                        <div class="dropdown-divider"></div> <a href="login.html" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End User profile text-->
+                        </li>
+                        <!-- User Profile-->
+                        <li class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i> <span class="hide-menu">Personal</span></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark" href="/" aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span class="hide-menu">Dashboard</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark" href="/income" aria-expanded="false"><i data-feather="dollar-sign" class="feather-icon"></i><span class="hide-menu">Income</span></a></li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+            <!-- Bottom points-->
+            <div class="sidebar-footer">
+                <!-- item-->
+                <a href="" class="link" data-toggle="tooltip" title="Settings"><i class="ti-settings"></i></a>
+                <!-- item-->
+                <a href="" class="link" data-toggle="tooltip" title="Email"><i class="mdi mdi-gmail"></i></a>
+                <!-- item-->
+                <a href="" class="link" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a>
+            </div>
+            <!-- End Bottom points-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
         <div class="page-wrapper">
@@ -364,7 +415,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <!-- Row -->
                 <div class="row">
                     <!-- Column -->
-                    <div class="col-lg-3 col-md-6">
+                    <!-- <div class="col-lg-3 col-md-6">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Daily Sales</h4>
@@ -378,10 +429,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Column -->
                     <!-- Column -->
-                    <div class="col-lg-3 col-md-6">
+                    <!-- <div class="col-lg-3 col-md-6">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Weekly Sales</h4>
@@ -395,10 +446,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Column -->
                     <!-- Column -->
-                    <div class="col-lg-3 col-md-6">
+                    <!-- <div class="col-lg-3 col-md-6">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Monthly Sales</h4>
@@ -412,10 +463,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Column -->
                     <!-- Column -->
-                    <div class="col-lg-3 col-md-6">
+                    <!-- <div class="col-lg-3 col-md-6">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Yearly Sales</h4>
@@ -429,7 +480,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Column -->
                 </div>
                 <!-- Row -->
@@ -448,9 +499,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <div class="ml-auto ">
                                                 <ul class="list-inline">
                                                     <li class="list-inline-item">
-                                                        <h6 class="text-muted"><i class="fa fa-circle mr-1 text-success"></i>Product A</h6> </li>
+                                                        <h6 class="text-muted"><i class="fa fa-circle mr-1 text-success"></i>Pemasukan</h6> </li>
                                                     <li class="list-inline-item">
-                                                        <h6 class="text-muted"><i class="fa fa-circle mr-1 text-info"></i>Product B</h6> </li>
+                                                        <h6 class="text-muted"><i class="fa fa-circle mr-1 text-info"></i>Pengeluaran</h6> </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -458,7 +509,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <div class="col-12">
                                         <div class="revenue" style="height: 350px;"></div>
                                     </div>
-                                    <div class="col-lg-3 col-md-6 mb-4 mt-3 text-center">
+                                    <!-- <div class="col-lg-3 col-md-6 mb-4 mt-3 text-center">
                                         <h1 class="mb-0 font-weight-light">$54578</h1>
                                         <h6 class="text-muted">Total Revenue</h6></div>
                                     <div class="col-lg-3 col-md-6 mb-4 mt-3 text-center">
@@ -469,7 +520,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <h6 class="text-muted">Product A</h6></div>
                                     <div class="col-lg-3 col-md-6 mb-4 mt-3 text-center">
                                         <h1 class="mb-0 font-weight-light">$12578</h1>
-                                        <h6 class="text-muted">Product B</h6></div>
+                                        <h6 class="text-muted">Product B</h6></div> -->
                                 </div>
                             </div>
                         </div>
@@ -477,7 +528,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
                 <!-- Row -->
                 <!-- Row -->
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-lg-4 col-md-12">
                         <div class="card">
                             <div class="card-body">
@@ -565,7 +616,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- Row -->
             </div>
             <!-- ============================================================== -->
@@ -833,6 +884,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <script src=" <?php echo base_url('assets/libs/d3/dist/d3.min.js') ?>"></script>
     <script src=" <?php echo base_url('assets/libs/c3/c3.min.js') ?>"></script>
     <script src=" <?php echo base_url('assets/js/pages/dashboards/dashboard1.js') ?>"></script>
+    <!-- my script -->
+    <script type="text/javascript">
+        
+        $(function () {
+
+        });
+
+    </script>
 </body>
 
 </html>

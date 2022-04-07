@@ -9,13 +9,10 @@
     <title>Datadriven personal financial (this is will save your life)</title>
 
     <script src=" <?php echo base_url('assets/bootstrap/js/jquery.min.js'); ?> "></script>
-    <link rel="canonical" href="https://www.wrappixel.com/templates/monsteradmin/" />
-    <!-- Custom CSS -->
-    <link href=" <?php echo base_url('assets/libs/chartist/dist/chartist.min.css') ?>" rel="stylesheet">
-    <link href=" <?php echo base_url('assets/extra-libs/c3/c3.min.css') ?>" rel="stylesheet">
     <!-- Custom CSS -->
     <link href=" <?php echo base_url('assets/css/style.css') ?>" rel="stylesheet">
-
+    <!-- datatables -->
+    <link href=" <?php echo base_url('assets/libs/datatables/media/css/jquery.dataTables.css') ?>" rel="stylesheet">
 
 </head>
 

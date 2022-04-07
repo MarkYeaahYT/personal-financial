@@ -36,27 +36,38 @@ $(function () {
     // ############################################################
     // Revenue Statistics
     // ############################################################
-    new Chartist.Line('.revenue', {
-        labels: ['0', '4', '8', '12', '16', '20', '24', '30']
-        , series: [
-        [0, 2, 3.5, 0, 13, 1, 4, 1]
-        , [0, 4, 0, 4, 0, 4, 0, 4]
-      ]
-    }, {
-        high: 15
-        , low: 0
-        , showArea: true
-        , fullWidth: true
-        , plugins: [
-        Chartist.plugins.tooltip()
-      ], 
-        // As this is axis specific we need to tell Chartist to use whole numbers only on the concerned axis
-        axisY: {
-            onlyInteger: true
-            , offset: 20
-            , labelInterpolationFnc: function (value) {
-                return (value / 1) + 'k';
-            }
+    $.ajax({
+        dataType: "JSON",
+        url: `/profinance/data_revenue`,
+        success: function (response) {
+            new Chartist.Line('.revenue', {
+                labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                series: [
+                    response.data_pengeluaran,
+                    response.data_pemasukan
+                ]
+            }, 
+            {
+                high: response.jumlah, 
+                low: 0, 
+                showArea: true, 
+                fullWidth: true, 
+                plugins: [
+                    Chartist.plugins.tooltip({
+                        valueTransform: function () {
+                            return '-';
+                        }
+                    })
+                ], 
+                // As this is axis specific we need to tell Chartist to use whole numbers only on the concerned axis
+                axisY: {
+                    onlyInteger: true, 
+                    offset: 20, 
+                    labelInterpolationFnc: function (value) {
+                        return (value / 1);
+                    }
+                }
+            });
         }
     });
     

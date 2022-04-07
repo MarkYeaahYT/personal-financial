@@ -50,4 +50,6 @@ function dd()
     echo    "</body>
         </html>
     ";
+
+    die();
 }
